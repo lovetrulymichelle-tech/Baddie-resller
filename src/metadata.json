@@ -1,0 +1,60 @@
+{
+  "name": "Baddie Reseller",
+  "version": "1.0.0",
+  "description": "AI-Powered Refiller App for Digital Entrepreneurs and Resellers",
+  "author": "Baddie Tech Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lovetrulymichelle-tech/Baddie-resller"
+  },
+  "keywords": [
+    "ai",
+    "reseller",
+    "automation",
+    "e-commerce",
+    "digital-entrepreneur",
+    "react",
+    "typescript"
+  ],
+  "categories": [
+    "Business",
+    "Productivity",
+    "AI Tools"
+  ],
+  "features": [
+    "AI-powered product recommendations",
+    "Automated listing management",
+    "Real-time voice interaction",
+    "Customer service automation",
+    "Inventory optimization",
+    "Marketing campaign generation"
+  ],
+  "technologies": {
+    "frontend": "React 18 with TypeScript",
+    "build": "Vite",
+    "styling": "CSS3",
+    "ai": "Gemini AI Live API",
+    "audio": "Web Audio API with AudioWorklets"
+  },
+  "requirements": {
+    "node": ">=16.0.0",
+    "browsers": [
+      "Chrome >= 88",
+      "Firefox >= 78",
+      "Safari >= 14",
+      "Edge >= 88"
+    ]
+  },
+  "configuration": {
+    "defaultAgent": "baddie-assistant",
+    "supportedLanguages": ["en", "es", "fr", "de"],
+    "maxAudioDuration": 300000,
+    "apiTimeout": 10000
+  },
+  "build": {
+    "timestamp": "2024-01-01T00:00:00.000Z",
+    "environment": "production",
+    "target": "es2020"
+  }
+}
