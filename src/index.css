@@ -138,3 +138,59 @@ button:focus-visible {
   border-radius: 8px;
   margin: 1rem 0;
 }
+
+.whats-next {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 12px;
+  margin: 1rem 0;
+  backdrop-filter: blur(10px);
+}
+
+.whats-next h3 {
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.whats-next button {
+  transition: all 0.2s ease;
+}
+
+.whats-next button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(100, 108, 255, 0.3);
+}
+
+.whats-next button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.whats-next button:disabled:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+@keyframes slide {
+  0% { transform: translateX(-100%); }
+  50% { transform: translateX(0%); }
+  100% { transform: translateX(100%); }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.whats-next .task-item {
+  animation: fadeInUp 0.5s ease forwards;
+}
