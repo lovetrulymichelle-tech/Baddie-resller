@@ -1,0 +1,22 @@
+{
+  "version": "1.0",
+  "description": "Pull Request Control Configuration",
+  "stopped_prs": [
+    {
+      "pr_number": 5,
+      "title": "[WIP] index.tsx check_circle App.tsx...",
+      "status": "stopped",
+      "reason": "User requested to stop the last pull request",
+      "stopped_at": "2025-09-20T17:06:00Z",
+      "stopped_by": "automated_action",
+      "action_taken": "marked_for_closure"
+    }
+  ],
+  "policies": {
+    "auto_stop_enabled": true,
+    "stop_criteria": {
+      "user_request": true,
+      "last_pr_stop": true
+    }
+  }
+}
