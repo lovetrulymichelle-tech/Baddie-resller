@@ -1,18 +1,17 @@
 
 import { LiveAPIProvider } from './contexts/LiveAPIContext'
 import Header from './components/Header'
-import BasicFace from './components/demo/basic-face/BasicFace'
+import MainDashboard from './components/dashboard/MainDashboard'
 import ControlTray from './components/console/control-tray/ControlTray'
-import KeynoteCompanion from './components/demo/keynote-companion/KeynoteCompanion'
+import './components/dashboard/dashboard.css'
 
 function App() {
   return (
     <LiveAPIProvider>
       <div className="app">
         <Header />
-        <BasicFace />
         <ControlTray />
-        <KeynoteCompanion />
+        <MainDashboard />
       </div>
     </LiveAPIProvider>
   )
