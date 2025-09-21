@@ -1,0 +1,15 @@
+{
+  "status": "healthy",
+  "timestamp": "{{timestamp}}",
+  "version": "1.0.0",
+  "environment": "production",
+  "services": {
+    "frontend": "healthy",
+    "build": "{{build_status}}"
+  },
+  "checks": {
+    "memory": "ok",
+    "disk": "ok",
+    "dependencies": "ok"
+  }
+}
