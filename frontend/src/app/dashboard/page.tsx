@@ -74,7 +74,12 @@ export default function DashboardPage() {
       }
 
       if (statsResponse.success) {
-        setStats(statsResponse);
+        setStats({
+          total_products: statsResponse.total_products || 0,
+          average_price: statsResponse.average_price || 0,
+          categories: statsResponse.categories || {},
+          subscription_status: statsResponse.subscription_status || 'inactive'
+        });
       }
 
       // Show upgrade prompt if not subscribed
