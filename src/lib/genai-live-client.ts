@@ -114,6 +114,7 @@ export class GenAILiveClient {
 
   private async simulateTranscription(_audioBlob: Blob): Promise<string> {
     // Simulate audio-to-text conversion
+    // The audio blob parameter is intentionally unused in the simulation
     return "This is a simulated transcription of the audio input."
   }
 

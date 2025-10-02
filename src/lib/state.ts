@@ -77,13 +77,14 @@ export const stateReducer = (state: AppState, action: StateAction): AppState => 
     case 'SET_AGENT':
       return { ...state, currentAgent: action.payload }
     
-    case 'ADD_MESSAGE':
+    case 'ADD_MESSAGE': {
       const newMessage: Message = {
         ...action.payload,
         id: generateId(),
         timestamp: Date.now()
       }
       return { ...state, messages: [...state.messages, newMessage] }
+    }
     
     case 'UPDATE_SETTINGS':
       return { 
